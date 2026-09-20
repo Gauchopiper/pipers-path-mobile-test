@@ -6,4 +6,6 @@ Generated using tools/build-pupil-test.cjs, from PupilStandalone.html. The TEST 
 
 Open the HTTPS page and paste the complete existing dummy pupil test link when prompted. Its credentials are read from the fragment and kept in memory.
 
-All three existing regression suites passed. Physical mobile recording/upload remains to be tested by Leslie.
+All three existing regression suites passed. Leslie reported the physical-phone test PASSED on 2026-09-20: microphone permission, recording, playback, upload and TEST logging, Path loading and Group loading. This is a user-performed real-device result, not an agent microphone test. The tested static page was published at commit 260887b; this documentation update does not change it.
+
+The earlier Apps Script iframe microphone permissions-policy failure is isolated to that hosting context by the successful separate HTTPS test. Keep this temporary site available for now. Production and the approved TEST backend remain unchanged. Targets, badges and production scoring remain outside this diagnostic.
